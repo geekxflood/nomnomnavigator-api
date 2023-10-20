@@ -10,4 +10,4 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - RESTAURANT_WEBSITE=https://default-restaurant-url.com
+      - RESTAURANT_WEBSITE=${RESTAURANT_WEBSITE}

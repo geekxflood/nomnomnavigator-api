@@ -7,9 +7,14 @@ const app = express();
 // Ahoy! The grand expedition to fetch the fabled menu data commences henceforth!
 async function fetchMenuData() {
   // Hoist the sails, launch the browser! Steady as she goes, into the vast ocean of HTML!
-  const browser = await puppeteer.launch({ headless: true, headlessMode: 'new' });  // Stealth mode activated for clandestine operations!
+  const browser = await puppeteer.launch({ 
+    headless: 'new', 
+    executablePath: '/usr/bin/google-chrome', 
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  }); // Stealth mode activated for clandestine operations!
+
   const page = await browser.newPage();
-  
+
   // The map leading to the treasure, bestowed upon by the environmental gods!
   const restaurantURL = process.env.RESTAURANT_WEBSITE || 'https://default-restaurant-url.com';
   
