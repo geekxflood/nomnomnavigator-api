@@ -11,6 +11,8 @@ Ahoy there, brave digital voyagers! Welcome aboard the SS NomNomNavigator, a gal
   - [API](#api)
     - [Get Menu](#get-menu)
   - [Development](#development)
+  - [Dockerization](#dockerization)
+  - [The Chart](#the-chart)
   - [License](#license)
 
 ## Installation
@@ -117,6 +119,44 @@ Should ye wish to venture into the codebase and contribute to the grand expediti
     ```
 
 6. Open a pull request from yer branch and wait for the crew to review yer contributions.
+
+## Dockerization
+
+Arr matey, ready to containerize the SS NomNomNavigator and sail smoothly across any machine? Follow the steps below:
+
+1. Build the Docker image with a tag of yer choice:
+    
+    ```bash
+    docker build -t nomnomnavigator:latest .
+    ```
+    
+2. Run the image in a container, mapping the port to yer liking:
+    
+    ```bash
+    docker run -p 3000:3000 nomnomnavigator:latest
+    ```
+
+## The Chart
+
+With the helm at yer fingertips, navigate through the Kubernetes seas with our chart. Install it and man the helm!
+
+1. Add the NomNomNavigator chart repository:
+
+    ```bash
+    helm repo add nomnomnavigator https://your-chart-repo.com
+    ```
+
+2. Update yer chart repositories:
+
+    ```bash
+    helm repo update
+    ```
+    
+3. Install the NomNomNavigator chart:
+
+    ```bash
+    helm install nomnomnavigator nomnomnavigator/nomnomnavigator
+    ```
 
 ## License
 
