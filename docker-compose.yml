@@ -1,0 +1,13 @@
+---
+version: '3.8'
+
+services:
+  nomnomnavigator-api:
+    image: nomnomnavigator-api:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - RESTAURANT_WEBSITE=https://default-restaurant-url.com
