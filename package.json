@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/nomnomnavigator-api.git"
+    "url": "git+https://github.com/geekxflood/nomnomnavigator-api.git"
   },
   "keywords": [
     "meal",
@@ -18,18 +18,14 @@
     "scraping",
     "puppeteer"
   ],
-  "author": "Your Name <your-email@example.com>",
+  "author": "Geekxflood",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/your-username/nomnomnavigator-api/issues"
+    "url": "https://github.com/geekxflood/nomnomnavigator-api/issues"
   },
-  "homepage": "https://github.com/your-username/nomnomnavigator-api#readme",
+  "homepage": "https://github.com/geekxflood/nomnomnavigator-api#readme",
   "dependencies": {
     "express": "^4.18.2",
     "puppeteer": "^21.4.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.51.0",
-    "eslint-config-google": "^0.14.0"
   }
 }
